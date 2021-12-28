@@ -1,0 +1,1 @@
+const PROFILE_TOGGLE_ACTION = Redux.createAction("PROFILE_TOGGLE");

@@ -1,0 +1,295 @@
+@import "common.less";
+
+.comments-container {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  grid-template-rows: 100vh;
+
+  .comments-panel {
+    display: grid;
+    background: #FFFFFF;
+    grid-template-rows: 210px 25px 1fr 98px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .comments-report {
+      align-self: center;
+      display: inline-grid;
+      align-items: center;
+      grid-template-columns: 48px 1fr;
+
+      .comments-report-type-image {
+        grid-column: 1;
+        grid-row: 1 e("/") 3;
+      }
+
+      .comments-report-type {
+        grid-column: 2;
+        grid-row: 1;
+        font-family: Gilroy Medium;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 13px;
+        line-height: 16px;
+        color: #333333;
+      }
+
+      .comments-report-location {
+        grid-column: 2;
+        grid-row: 2;
+        display: inline-grid;
+        grid-template-columns: 22px 1fr;
+
+        .comments-report-location-text {
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13.1503px;
+          color: #333333;
+        }
+      }
+
+      .comments-report-date {
+        grid-column: 1 e("/") 3;
+        grid-row: 3;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        color: #333333;
+        opacity: 0.5;
+        padding-left: 9px;
+        padding-top: 12px;
+      }
+
+      .comments-report-description {
+        grid-column: 1 e("/") 3;
+        grid-row: 4;
+
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13.1503px;
+        line-height: 150%;
+
+        color: #333333;
+        height: 75px;
+        overflow-y: auto;
+        margin-top: 15px;
+
+        scrollbar-width: thin;
+        scrollbar-color: #333333 #FFFFFF;
+      }
+
+      .comments-report-description::-webkit-scrollbar-thumb {
+        background-color: @scrollThumbColor;
+        border-radius: @scrollBorderRadius;
+      }
+
+      .comments-report-description::-webkit-scrollbar {
+        width: @scrollWidth;
+      }
+
+      .comments-report-description::-webkit-scrollbar-track {
+        background: @scrollBackgroundColor;
+      }
+    }
+
+    .comments-content-title {
+      padding-left: 9px;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 15px;
+      color: #333333;
+      opacity: 0.5;
+    }
+
+    .comments-content {
+      overflow-y: auto;
+
+      scrollbar-width: thin;
+      scrollbar-color: #333333 #FFFFFF;
+
+      .comments {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 24px;
+
+        .comments-comment {
+
+          .comments-comment-header {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 57px 1fr;
+            grid-row-gap: 5px;
+            grid-column-gap: 2px;
+
+            .comments-comment-header-icon {
+              grid-column: 1;
+              grid-row: 1 e("/") 3;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              position: relative;
+
+              .comments-comment-header-icon-text {
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 10.6875px;
+                line-height: 13px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #333333;
+
+                position: absolute;
+                top: 42%;
+                left: 50%;
+                transform: translate(-50%, -42%);
+              }
+            }
+
+            .comments-comment-header-author {
+              grid-column: 2;
+              grid-row: 1;
+              align-self: end;
+              font-family: Gilroy;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 13.1503px;
+              color: #333333;
+            }
+
+            .comments-comment-header-date {
+              grid-column: 2;
+              grid-row: 2;
+              align-self: start;
+              font-family: Gilroy;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 11px;
+              line-height: 13px;
+              color: #333333;
+              opacity: 0.5;
+            }
+          }
+
+          .comments-comment-content {
+            background: #F4F4F4;
+            border-radius: 16px;
+            margin-left: 3px;
+            display: grid;
+            align-items: center;
+            grid-template-rows: 1fr min-content;
+            grid-row-gap: 8px;
+            padding-bottom: 14px;
+            padding-top: 14px;
+            padding-left: 14px;
+
+            .comments-comment-text {
+              font-family: Gilroy;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 150%;
+              color: #333333;
+
+              .comments-comment-image > img {
+                background: #A9A9A9;
+                border-radius: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .comments-content::-webkit-scrollbar-thumb {
+      background-color: @scrollThumbColor;
+      border-radius: @scrollBorderRadius;
+    }
+
+    .comments-content::-webkit-scrollbar {
+      width: @scrollWidth;
+    }
+
+    .comments-content::-webkit-scrollbar-track {
+      background: @scrollBackgroundColor;
+    }
+
+    .comments-footer {
+      align-self: center;
+      justify-self: center;
+
+      .comments-message-input > input[type="text"] {
+        padding-left: 17px;
+        background: url("@{images}/photo.png") right 17px top 9px no-repeat;
+        width: 240px;
+        height: 38px;
+        border: 2px solid #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 32px;
+      }
+
+      .comments-message-input-text {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        color: #BDBDBD;
+      }
+    }
+  }
+
+  .comments-image {
+    width: 100%;
+    height: 100%;
+    background: #000000EE;
+    
+    .comments-image-div {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      overflow: auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      object-fit: contain;
+      -o-object-fit: contain;
+    }
+
+    .comments-close-btn {
+      position: absolute;
+      top: 14px;
+      left: 306px;
+      height: 38px;
+      width: 38px;
+      background: url("@{images}/btn-comments-close.png") no-repeat;
+    }
+
+    .comments-close-btn:hover {
+      cursor: pointer;
+      background: url("@{images}/btn-comments-close-hover.png") no-repeat;
+    }
+  }
+
+  .comments-image > img:nth-child(1) {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}
+

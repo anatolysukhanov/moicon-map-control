@@ -1,0 +1,10 @@
+/.idea/
+/var/
+/vendor/
+/vendor-npm/
+/web/
+!/web/index_*.php
+/bin/dev/files/
+!/bin/dev/files/package.json
+/tsconfig.json
+*~

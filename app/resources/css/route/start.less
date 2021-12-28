@@ -1,0 +1,227 @@
+@import "../common.less";
+
+.route-start-container {
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .route-start {
+    position: absolute;
+    bottom: -189px;
+    width: 462px;
+    height: 189px;
+
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 27px;
+
+    background: #FFFFFF;
+    padding: 30px 22px 30px 27px;
+    transition: bottom 0.3s linear;
+
+    &.route-start-expanded {
+      bottom: 0;
+      box-shadow: 0px -8px 60px rgba(13, 15, 17, 0.15);
+    }
+
+    .route-start-info {
+      justify-self: start;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      /*justify-items: center;*/
+
+      .route-start-distance {
+        width: 64px;
+        height: 64px;
+        background: #F2F2F2;
+        border-radius: 16px;
+        display: inline-grid;
+        align-items: center;
+        justify-items: center;
+
+        .route-start-distance-value {
+          align-self: end;
+          font-family: Gilroy SemiBold;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          color: #333333;
+        }
+
+        .route-start-distance-unit {
+          align-self: start;
+          font-family: Gilroy Light;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          text-align: center;
+          color: #333333;
+        }
+      }
+
+      .route-start-route {
+        display: inline-grid;
+        align-items: center;
+        justify-items: start;
+
+        .route-start-from-to {
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          color: #333333;
+        }
+
+        .route-start-description {
+          align-self: start;
+          font-family: Gilroy Light;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          color: #828282;
+        }
+      }
+
+      .route-start-close-button {
+        justify-self: end;
+        width: 38px;
+        height: 38px;
+        background: url("../@{images}/btn-close.png") no-repeat;
+        cursor: pointer;
+      }
+
+      .route-start-close-button:hover {
+        background: url("../@{images}/btn-close-hover.png") no-repeat;
+      }
+    }
+
+    .route-start-buttons {
+      display: grid;
+      grid-column-gap: 8px;
+
+      &.three-buttons {
+        grid-template-columns: 1fr 2fr 1fr;
+      }
+
+      &.two-buttons {
+        grid-auto-flow: column;
+        justify-content: start;
+      }
+
+      .route-start-cancel-button {
+        position: relative;
+        width: 98px;
+        height: 38px;
+        background: #E0E0E0;
+        border-radius: 32px;
+        cursor: pointer;
+
+        .route-start-cancel-button-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: inline-grid;
+          grid-template-columns: auto;
+          justify-items: center;
+          align-items: center;
+        }
+      }
+
+      .route-start-history-button {
+        position: relative;
+        width: 140px;
+        height: 38px;
+        background: #FFCC33;
+        border-radius: 32px;
+        cursor: pointer;
+
+        .route-start-history-button-content {
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: inline-grid;
+          justify-items: center;
+          align-items: center;
+        }
+      }
+
+      .route-start-button-text {
+        font-family: Gilroy Bold;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #333333;
+      }
+
+      .route-start-start-button {
+        position: relative;
+        width: 108px;
+        height: 38px;
+        background: #FFCC33;
+        border-radius: 32px;
+        cursor: pointer;
+
+        .route-start-start-button-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: inline-grid;
+          grid-template-columns: auto auto;
+          grid-column-gap: 8px;
+          justify-items: center;
+          align-items: center;
+
+          .route-start-start-button-arrow {
+            height: 16px;
+            width: 13px;
+            background: url("../@{images}/arrow.png") no-repeat;
+          }
+        }
+      }
+
+      .route-start-record-button {
+        /*justify-self: end;*/
+        position: relative;
+        width: 98px;
+        height: 38px;
+        background: #FFD8D8;
+        border-radius: 32px;
+        cursor: pointer;
+
+        .route-start-record-button-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: inline-grid;
+          grid-template-columns: auto auto;
+          grid-column-gap: 8px;
+          justify-items: center;
+          align-items: center;
+
+          .route-start-record-button-circle {
+            height: 20px;
+            width: 20px;
+            background: url("../@{images}/circle.png") no-repeat;
+          }
+        }
+      }
+    }
+  }
+}

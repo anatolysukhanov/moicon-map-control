@@ -1,0 +1,1 @@
+const COMMENTS_TOGGLE_ACTION = Redux.createAction("COMMENTS_TOGGLE");

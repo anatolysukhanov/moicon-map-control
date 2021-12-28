@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+namespace bin;
+try
+{
+	$PORT = 8000;
+	
+	echo "\033[36;40m" . ' Server listening on http://127.0.0.1:' . $PORT . ' ' . "\033[0m" . PHP_EOL;
+	chdir(__DIR__ . '/../web/');
+	exec('php -S 127.0.0.1:' . $PORT . ' >' . ((strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') ? 'nul' : '/dev/null') . ' 2>&1');
+}
+catch(\Throwable $e)
+{
+	echo 'ERROR: ' . $e->getMessage() . PHP_EOL;
+	exit;
+}

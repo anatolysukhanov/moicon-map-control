@@ -1,0 +1,143 @@
+@import "common.less";
+
+.settings {
+  position: absolute;
+  width: @sidePanelWidth;
+  height: 100%;
+  left: -@sidePanelWidth;
+  top: 0px;
+  background-color: #FFFFFF;
+  transition: left 0.3s linear;
+
+  &.expanded {
+    left: 0;
+  }
+
+  .grid-table {
+    display: inline-grid;
+  }
+
+  .title {
+    grid-column: 1 e("/") 2;
+    grid-row: 1;
+    font-family: Gilroy ExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 26px;
+    color: #333333;
+    width: 133px;
+    height: 28px;
+    margin-top: 38px;
+    margin-left: 31px;
+  }
+
+  .subtitle {
+    grid-column: 1 e("/") 2;
+    grid-row: 2;
+    font-family: Gilroy;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    color: #333333;
+    opacity: 0.5;
+    /*width: 253px;*/
+    height: 17px;
+    margin-left: 31px;
+    margin-top: 29px;
+  }
+
+  .close-button {
+    grid-column: 2;
+    grid-row: 1 e("/") 5;
+    width: 38px;
+    height: 38px;
+    margin-top: 33px;
+    margin-left: 84px;
+    background: url("@{images}/btn-close.png") no-repeat;
+  }
+
+  .close-button:hover {
+    cursor: pointer;
+    background: url("@{images}/btn-close-hover.png") no-repeat;
+  }
+
+  .road-names {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 18px;
+    margin-left: 31px;
+  }
+
+  .messages {
+    grid-column: 1;
+    grid-row: 4;
+    margin-top: 15px;
+    margin-left: 31px;
+  }
+
+  .other-trucks {
+    grid-column: 1;
+    grid-row: 5;
+    margin-top: 15px;
+    margin-left: 31px;
+  }
+
+  .item {
+    display: inline-grid;
+
+    .label {
+      grid-column: 1 / 2;
+      grid-row: 1;
+      font-family: Gilroy;
+      font-weight: 800;
+      font-size: 15px;
+      line-height: 18px;
+      color: #333333;
+      margin-top: 3px;
+      margin-left: 16px;
+      height: 17px;
+    }
+
+    .toggle {
+      grid-column: 2 / 2;
+      grid-row: 1;
+
+      .checkbox:checked + .switch::after {
+        transform: translateX(19px);
+      }
+
+      .checkbox:checked + .switch {
+        background-color: #FFCC33;
+      }
+
+      .checkbox {
+        display: none;
+      }
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 43px;
+        height: 24px;
+        background: #333333;
+        border-radius: 32px;
+        margin-bottom: 0px;
+        cursor: pointer;
+        transition: .4s;
+      }
+
+      .switch::after {
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        top: 4px;
+        left: 4px;
+        background-color: #FFFFFF;
+        border-radius: 32px;
+        content: "";
+        transition: .4s;
+      }
+    }
+  }
+}

@@ -1,0 +1,1306 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e0fd3bde7707faa471bfe04d079a0c83",
+    "packages": [
+        {
+            "name": "gitonomy/gitlib",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gitonomy/gitlib.git",
+                "reference": "932a960221ae3484a3e82553b3be478e56beb68d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gitonomy/gitlib/zipball/932a960221ae3484a3e82553b3be478e56beb68d",
+                "reference": "932a960221ae3484a3e82553b3be478e56beb68d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 || ^7.0",
+                "symfony/process": "^2.3|^3.0|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35|^5.7",
+                "psr/log": "^1.0"
+            },
+            "suggest": {
+                "psr/log": "Add some log"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gitonomy\\Git\\": "src/Gitonomy/Git/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandre Salomé",
+                    "email": "alexandre.salome@gmail.com",
+                    "homepage": "http://alexandre-salome.fr"
+                },
+                {
+                    "name": "Julien DIDIER",
+                    "email": "genzo.wm@gmail.com",
+                    "homepage": "http://www.jdidier.net"
+                }
+            ],
+            "description": "Library for accessing git",
+            "homepage": "http://gitonomy.com",
+            "time": "2018-04-22T19:55:36+00:00"
+        },
+        {
+            "name": "leafo/scssphp",
+            "version": "v0.7.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/scssphp.git",
+                "reference": "a384906af3d078e98b089d7d36f6ceab8703f7ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/a384906af3d078e98b089d7d36f6ceab8703f7ff",
+                "reference": "a384906af3d078e98b089d7d36f6ceab8703f7ff",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6",
+                "squizlabs/php_codesniffer": "~2.5"
+            },
+            "bin": [
+                "bin/pscss"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leafo\\ScssPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "scssphp is a compiler for SCSS written in PHP.",
+            "homepage": "http://leafo.github.io/scssphp/",
+            "keywords": [
+                "css",
+                "less",
+                "sass",
+                "scss",
+                "stylesheet"
+            ],
+            "abandoned": "scssphp/scssphp",
+            "time": "2019-04-24T18:10:10+00:00"
+        },
+        {
+            "name": "lowentry/backend-javascript",
+            "version": "1.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/lowentry/plugin_javascript_lebackend.git",
+                "reference": "b244895edf28de377e00710c8a2946b604df3d54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/lowentry/plugin_javascript_lebackend/get/b244895edf28de377e00710c8a2946b604df3d54.zip",
+                "reference": "b244895edf28de377e00710c8a2946b604df3d54",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "web/lowentrybackend.js"
+                    ],
+                    "files": [
+                        "web/lowentrybackend.min.js"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LowEntryBackendJavascript\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "A Javascript library for the Low Entry Backend service.",
+            "homepage": "https://public.lowentry.com/files/LowEntryBackend/javascript/release_notes.php",
+            "time": "2020-07-12T21:09:26+00:00"
+        },
+        {
+            "name": "lowentry/javascript-framework-core",
+            "version": "1.13.2",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/lowentry/plugin_javascript_framework_core.git",
+                "reference": "f587629af6d71f31e00894c593547a1bb152abb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/lowentry/plugin_javascript_framework_core/get/f587629af6d71f31e00894c593547a1bb152abb8.zip",
+                "reference": "f587629af6d71f31e00894c593547a1bb152abb8",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "ext-ctype": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-zlib": "*",
+                "gitonomy/gitlib": "^1.0.4",
+                "leafo/scssphp": "^0.7.7",
+                "lowentry/backend-javascript": "^1.0",
+                "mouf/nodejs-installer": "^1.0.13",
+                "mrclay/jsmin-php": "^2.3.2",
+                "npm-asset/jquery": "^3.3",
+                "npm-asset/jshashes": "^1.0",
+                "npm-asset/react": "^16.8",
+                "npm-asset/react-dom": "^16.8",
+                "npm-asset/react-redux": "^7.1.3.",
+                "npm-asset/redux": "^4.0.4",
+                "npm-asset/redux-actions": "^2.6.5",
+                "npm-asset/redux-saga": "^1.1.3",
+                "npm-asset/redux-starter-kit": "1.0.1",
+                "npm-asset/regenerator-runtime": "^0.13.3",
+                "npm-asset/reselect": "^4.0.0",
+                "npm-asset/systemjs": "^3.0",
+                "npm-asset/twig": "1.13.*",
+                "npm-asset/typescript": "^3.1.6",
+                "npm-asset/urijs": "^1.19",
+                "oyejorge/less.php": "^1.7.0.14",
+                "php": ">=7.0.0",
+                "tubalmartin/cssmin": "^4.1.1"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "LowEntryJavascriptFrameworkCore\\ComposerEvents",
+                "mouf": {
+                    "nodejs": {
+                        "version": "12.*",
+                        "targetDir": "vendor/nodejs/nodejs",
+                        "forceLocal": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LowEntryJavascriptFrameworkCore\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "A framework to create complex single-page and multi-page javascript websites with ease.",
+            "homepage": "https://lowentry.com/",
+            "time": "2020-06-05T00:17:02+00:00"
+        },
+        {
+            "name": "mouf/nodejs-installer",
+            "version": "v1.0.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/nodejs-installer.git",
+                "reference": "e9bc2e7c75665913dd73dc4765b40757e6796ee8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/nodejs-installer/zipball/e9bc2e7c75665913dd73dc4765b40757e6796ee8",
+                "reference": "e9bc2e7c75665913dd73dc4765b40757e6796ee8",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0.0",
+                "ext-openssl": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": [
+                    "Mouf\\NodeJsInstaller\\NodeJsPlugin"
+                ],
+                "mouf": {
+                    "logo": "node-js.png"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mouf\\NodeJsInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "An installer package that let's you install NodeJS and NPM as a Composer dependency.",
+            "homepage": "http://mouf-php.com/packages/mouf/nodejs-installer",
+            "keywords": [
+                "installer",
+                "nodejs",
+                "npm"
+            ],
+            "time": "2018-04-16T16:03:09+00:00"
+        },
+        {
+            "name": "mrclay/jsmin-php",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrclay/jsmin-php.git",
+                "reference": "bb05febc9440852d39899255afd5569b7f21a72c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrclay/jsmin-php/zipball/bb05febc9440852d39899255afd5569b7f21a72c",
+                "reference": "bb05febc9440852d39899255afd5569b7f21a72c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JSMin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Clay",
+                    "email": "steve@mrclay.org",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ryan Grove",
+                    "email": "ryan@wonko.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides a modified port of Douglas Crockford's jsmin.c, which removes unnecessary whitespace from JavaScript files.",
+            "homepage": "https://github.com/mrclay/jsmin-php/",
+            "keywords": [
+                "compress",
+                "jsmin",
+                "minify"
+            ],
+            "time": "2018-12-06T15:03:38+00:00"
+        },
+        {
+            "name": "npm-asset/acorn",
+            "version": "7.3.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/acorn/-/acorn-7.3.1.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/acorn-jsx",
+            "version": "5.2.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.2.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/babel--runtime",
+            "version": "7.10.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@babel/runtime/-/runtime-7.10.4.tgz"
+            },
+            "require": {
+                "npm-asset/regenerator-runtime": ">=0.13.4,<0.14.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/balanced-match",
+            "version": "1.0.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/brace-expansion",
+            "version": "1.1.11",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz"
+            },
+            "require": {
+                "npm-asset/balanced-match": ">=1.0.0,<2.0.0",
+                "npm-asset/concat-map": "0.0.1"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/concat-map",
+            "version": "0.0.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/es6-promise",
+            "version": "4.2.8",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.8.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/foreachasync",
+            "version": "3.0.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/foreachasync/-/foreachasync-3.0.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "Apache2"
+            ]
+        },
+        {
+            "name": "npm-asset/hoist-non-react-statics",
+            "version": "3.3.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
+            },
+            "require": {
+                "npm-asset/react-is": ">=16.7.0,<17.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "BSD-3-Clause"
+            ]
+        },
+        {
+            "name": "npm-asset/immer",
+            "version": "4.0.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/immer/-/immer-4.0.2.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/invariant",
+            "version": "2.2.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz"
+            },
+            "require": {
+                "npm-asset/loose-envify": ">=1.0.0,<2.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/jquery",
+            "version": "3.5.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/jquery/-/jquery-3.5.1.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/js-tokens",
+            "version": "4.0.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/jshashes",
+            "version": "1.0.8",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/jshashes/-/jshashes-1.0.8.tgz"
+            },
+            "type": "npm-asset"
+        },
+        {
+            "name": "npm-asset/json-stringify-safe",
+            "version": "5.0.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "ISC"
+            ]
+        },
+        {
+            "name": "npm-asset/just-curry-it",
+            "version": "3.1.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/just-curry-it/-/just-curry-it-3.1.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/locutus",
+            "version": "2.0.11",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/locutus/-/locutus-2.0.11.tgz"
+            },
+            "require": {
+                "npm-asset/es6-promise": ">=4.2.5,<5.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/loose-envify",
+            "version": "1.4.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz"
+            },
+            "require": {
+                "npm-asset/js-tokens": ">=3.0.0,<4.0.0|>=4.0.0,<5.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/minimatch",
+            "version": "3.0.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz"
+            },
+            "require": {
+                "npm-asset/brace-expansion": ">=1.1.7,<2.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "ISC"
+            ]
+        },
+        {
+            "name": "npm-asset/object-assign",
+            "version": "4.1.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/prop-types",
+            "version": "15.7.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
+            },
+            "require": {
+                "npm-asset/loose-envify": ">=1.4.0,<2.0.0",
+                "npm-asset/object-assign": ">=4.1.1,<5.0.0",
+                "npm-asset/react-is": ">=16.8.1,<17.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/react",
+            "version": "16.13.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/react/-/react-16.13.1.tgz"
+            },
+            "require": {
+                "npm-asset/loose-envify": ">=1.1.0,<2.0.0",
+                "npm-asset/object-assign": ">=4.1.1,<5.0.0",
+                "npm-asset/prop-types": ">=15.6.2,<16.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/react-dom",
+            "version": "16.13.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/react-dom/-/react-dom-16.13.1.tgz"
+            },
+            "require": {
+                "npm-asset/loose-envify": ">=1.1.0,<2.0.0",
+                "npm-asset/object-assign": ">=4.1.1,<5.0.0",
+                "npm-asset/prop-types": ">=15.6.2,<16.0.0",
+                "npm-asset/scheduler": ">=0.19.1,<0.20.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/react-google-maps--api",
+            "version": "1.9.7",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@react-google-maps/api/-/api-1.9.7.tgz"
+            },
+            "require": {
+                "npm-asset/acorn": "7.3.1",
+                "npm-asset/acorn-jsx": ">=5.2.0,<6.0.0",
+                "npm-asset/invariant": "2.2.4",
+                "npm-asset/react-google-maps--infobox": "1.9.6",
+                "npm-asset/react-google-maps--marker-clusterer": "1.9.6"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/react-google-maps--infobox",
+            "version": "1.9.6",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@react-google-maps/infobox/-/infobox-1.9.6.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/react-google-maps--marker-clusterer",
+            "version": "1.9.6",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@react-google-maps/marker-clusterer/-/marker-clusterer-1.9.6.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/react-is",
+            "version": "16.13.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/react-redux",
+            "version": "7.2.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/react-redux/-/react-redux-7.2.0.tgz"
+            },
+            "require": {
+                "npm-asset/babel--runtime": ">=7.5.5,<8.0.0",
+                "npm-asset/hoist-non-react-statics": ">=3.3.0,<4.0.0",
+                "npm-asset/loose-envify": ">=1.4.0,<2.0.0",
+                "npm-asset/prop-types": ">=15.7.2,<16.0.0",
+                "npm-asset/react-is": ">=16.9.0,<17.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/reduce-reducers",
+            "version": "0.4.3",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/reduce-reducers/-/reduce-reducers-0.4.3.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux",
+            "version": "4.0.5",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/redux/-/redux-4.0.5.tgz"
+            },
+            "require": {
+                "npm-asset/loose-envify": ">=1.4.0,<2.0.0",
+                "npm-asset/symbol-observable": ">=1.2.0,<2.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux-actions",
+            "version": "2.6.5",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/redux-actions/-/redux-actions-2.6.5.tgz"
+            },
+            "require": {
+                "npm-asset/invariant": ">=2.2.4,<3.0.0",
+                "npm-asset/just-curry-it": ">=3.1.0,<4.0.0",
+                "npm-asset/loose-envify": ">=1.4.0,<2.0.0",
+                "npm-asset/reduce-reducers": ">=0.4.3,<0.5.0",
+                "npm-asset/to-camel-case": ">=1.0.0,<2.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux-devtools-extension",
+            "version": "2.13.8",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/redux-devtools-extension/-/redux-devtools-extension-2.13.8.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux-immutable-state-invariant",
+            "version": "2.1.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/redux-immutable-state-invariant/-/redux-immutable-state-invariant-2.1.0.tgz"
+            },
+            "require": {
+                "npm-asset/invariant": ">=2.1.0,<3.0.0",
+                "npm-asset/json-stringify-safe": ">=5.0.1,<6.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux-saga",
+            "version": "1.1.3",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/redux-saga/-/redux-saga-1.1.3.tgz"
+            },
+            "require": {
+                "npm-asset/redux-saga--core": ">=1.1.3,<2.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux-saga--core",
+            "version": "1.1.3",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@redux-saga/core/-/core-1.1.3.tgz"
+            },
+            "require": {
+                "npm-asset/babel--runtime": ">=7.6.3,<8.0.0",
+                "npm-asset/redux": ">=4.0.4,<5.0.0",
+                "npm-asset/redux-saga--deferred": ">=1.1.2,<2.0.0",
+                "npm-asset/redux-saga--delay-p": ">=1.1.2,<2.0.0",
+                "npm-asset/redux-saga--is": ">=1.1.2,<2.0.0",
+                "npm-asset/redux-saga--symbols": ">=1.1.2,<2.0.0",
+                "npm-asset/redux-saga--types": ">=1.1.0,<2.0.0",
+                "npm-asset/typescript-tuple": ">=2.2.1,<3.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux-saga--deferred",
+            "version": "1.1.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@redux-saga/deferred/-/deferred-1.1.2.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux-saga--delay-p",
+            "version": "1.1.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@redux-saga/delay-p/-/delay-p-1.1.2.tgz"
+            },
+            "require": {
+                "npm-asset/redux-saga--symbols": ">=1.1.2,<2.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux-saga--is",
+            "version": "1.1.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@redux-saga/is/-/is-1.1.2.tgz"
+            },
+            "require": {
+                "npm-asset/redux-saga--symbols": ">=1.1.2,<2.0.0",
+                "npm-asset/redux-saga--types": ">=1.1.0,<2.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux-saga--symbols",
+            "version": "1.1.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@redux-saga/symbols/-/symbols-1.1.2.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux-saga--types",
+            "version": "1.1.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@redux-saga/types/-/types-1.1.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux-starter-kit",
+            "version": "1.0.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/redux-starter-kit/-/redux-starter-kit-1.0.1.tgz"
+            },
+            "require": {
+                "npm-asset/immer": ">=4.0.1,<5.0.0",
+                "npm-asset/redux": ">=4.0.0,<5.0.0",
+                "npm-asset/redux-devtools-extension": ">=2.13.8,<3.0.0",
+                "npm-asset/redux-immutable-state-invariant": ">=2.1.0,<3.0.0",
+                "npm-asset/redux-thunk": ">=2.3.0,<3.0.0",
+                "npm-asset/reselect": ">=4.0.0,<5.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/redux-thunk",
+            "version": "2.3.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/redux-thunk/-/redux-thunk-2.3.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/regenerator-runtime",
+            "version": "0.13.5",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.5.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/reselect",
+            "version": "4.0.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/reselect/-/reselect-4.0.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/scheduler",
+            "version": "0.19.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz"
+            },
+            "require": {
+                "npm-asset/loose-envify": ">=1.1.0,<2.0.0",
+                "npm-asset/object-assign": ">=4.1.1,<5.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/symbol-observable",
+            "version": "1.2.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/symbol-observable/-/symbol-observable-1.2.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/systemjs",
+            "version": "3.1.6",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/systemjs/-/systemjs-3.1.6.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/to-camel-case",
+            "version": "1.0.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/to-camel-case/-/to-camel-case-1.0.0.tgz"
+            },
+            "require": {
+                "npm-asset/to-space-case": ">=1.0.0,<2.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/to-no-case",
+            "version": "1.0.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/to-no-case/-/to-no-case-1.0.2.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/to-space-case",
+            "version": "1.0.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/to-space-case/-/to-space-case-1.0.0.tgz"
+            },
+            "require": {
+                "npm-asset/to-no-case": ">=1.0.0,<2.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/twig",
+            "version": "1.13.3",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/twig/-/twig-1.13.3.tgz"
+            },
+            "require": {
+                "npm-asset/locutus": ">=2.0.5,<3.0.0",
+                "npm-asset/minimatch": "dev-3.0.x|3.0.x",
+                "npm-asset/walk": "dev-2.3.x|2.3.x"
+            },
+            "type": "npm-asset"
+        },
+        {
+            "name": "npm-asset/typescript",
+            "version": "3.9.6",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/typescript/-/typescript-3.9.6.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "Apache-2.0"
+            ]
+        },
+        {
+            "name": "npm-asset/typescript-compare",
+            "version": "0.0.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/typescript-compare/-/typescript-compare-0.0.2.tgz"
+            },
+            "require": {
+                "npm-asset/typescript-logic": ">=0.0.0,<0.0.1"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/typescript-logic",
+            "version": "0.0.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/typescript-logic/-/typescript-logic-0.0.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/typescript-tuple",
+            "version": "2.2.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/typescript-tuple/-/typescript-tuple-2.2.1.tgz"
+            },
+            "require": {
+                "npm-asset/typescript-compare": ">=0.0.2,<0.0.3"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/urijs",
+            "version": "1.19.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/urijs/-/urijs-1.19.2.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/walk",
+            "version": "2.3.14",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/walk/-/walk-2.3.14.tgz"
+            },
+            "require": {
+                "npm-asset/foreachasync": ">=3.0.0,<4.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "(MIT OR Apache-2.0)"
+            ]
+        },
+        {
+            "name": "oyejorge/less.php",
+            "version": "v1.7.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oyejorge/less.php.git",
+                "reference": "42925c5a01a07d67ca7e82dfc8fb31814d557bc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oyejorge/less.php/zipball/42925c5a01a07d67ca7e82dfc8fb31814d557bc9",
+                "reference": "42925c5a01a07d67ca7e82dfc8fb31814d557bc9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.24"
+            },
+            "bin": [
+                "bin/lessc"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Less": "lib/"
+                },
+                "classmap": [
+                    "lessc.inc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Agar",
+                    "homepage": "https://github.com/agar"
+                },
+                {
+                    "name": "Martin Jantošovič",
+                    "homepage": "https://github.com/Mordred"
+                },
+                {
+                    "name": "Josh Schmidt",
+                    "homepage": "https://github.com/oyejorge"
+                }
+            ],
+            "description": "PHP port of the Javascript version of LESS http://lesscss.org (Originally maintained by Josh Schmidt)",
+            "homepage": "http://lessphp.gpeasy.com",
+            "keywords": [
+                "css",
+                "less",
+                "less.js",
+                "lesscss",
+                "php",
+                "stylesheet"
+            ],
+            "abandoned": true,
+            "time": "2017-03-28T22:19:25+00:00"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v3.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "07432804942b9f6dd7b7377faf9920af5f95d70a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/07432804942b9f6dd7b7377faf9920af5f95d70a",
+                "reference": "07432804942b9f6dd7b7377faf9920af5f95d70a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-07-13T13:05:09+00:00"
+        },
+        {
+            "name": "tubalmartin/cssmin",
+            "version": "v4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port.git",
+                "reference": "3cbf557f4079d83a06f9c3ff9b957c022d7805cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tubalmartin/YUI-CSS-compressor-PHP-port/zipball/3cbf557f4079d83a06f9c3ff9b957c022d7805cf",
+                "reference": "3cbf557f4079d83a06f9c3ff9b957c022d7805cf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "cogpowered/finediff": "0.3.*",
+                "phpunit/phpunit": "4.8.*"
+            },
+            "bin": [
+                "cssmin"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tubalmartin\\CssMin\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Túbal Martín",
+                    "homepage": "http://tubalmartin.me/"
+                }
+            ],
+            "description": "A PHP port of the YUI CSS compressor",
+            "homepage": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port",
+            "keywords": [
+                "compress",
+                "compressor",
+                "css",
+                "cssmin",
+                "minify",
+                "yui"
+            ],
+            "time": "2018-01-15T15:26:51+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.0.0"
+    }
+}

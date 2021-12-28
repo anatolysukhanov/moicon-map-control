@@ -1,0 +1,70 @@
+@import "../common.less";
+
+.map-bottom-white-shadow {
+  position: absolute;
+  width: 100%;
+  height: 81px;
+  left: 0px;
+  bottom: 0px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+
+.map-bottom-container {
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  bottom: 21px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+
+  .map-bottom {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 30px;
+
+    .map-bottom-button-container {
+      display: grid;
+      justify-items: center;
+
+      .map-bottom-button-image {
+        width: 90px;
+        height: 90px;
+        pointer-events: auto;
+      }
+
+      .map-bottom-button-image:hover {
+        cursor: pointer;
+      }
+
+      .map-bottom-button-image-routes {
+        background: url("../@{images}/btn-routes.png") no-repeat;
+      }
+
+      .map-bottom-button-image-note {
+        background: url("../@{images}/btn-leave-note.png") no-repeat;
+      }
+
+      .map-bottom-button-image-reports {
+        background: url("../@{images}/btn-reports.png") no-repeat;
+      }
+
+      .map-bottom-button-image-report {
+        background: url("../@{images}/btn-report-problem.png") no-repeat;
+      }
+
+      .map-bottom-button-text {
+        position: relative;
+        top: -7px;
+        font-family: Gilroy ExtraBold;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #333333;
+      }
+    }
+  }
+}

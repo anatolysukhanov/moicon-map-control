@@ -1,0 +1,43 @@
+@import "common.less";
+
+.report-camera-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -1px;
+  bottom: 0;
+  background: #000000;
+
+  .report-camera-content {
+    position: fixed;
+    bottom: 0;
+    background: black;
+    color: white;
+    width: 100%;
+    height: 96px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    .report-camera-image-canvas {
+      display: none;
+    }
+
+    .report-camera-thumbnail-canvas {
+      display: none;
+    }
+
+    .report-camera-button {
+      width: 54px;
+      height: 54px;
+      background: url("@{images}/btn-camera.png") no-repeat;
+      cursor: pointer;
+    }
+  }
+}
+
+.report-camera-container > video {
+  width: 100%;
+  height: ~'calc(100% - 96px)';
+  background: #000000;
+}

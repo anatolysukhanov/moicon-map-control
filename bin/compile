@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+namespace bin;
+try
+{
+	require_once __DIR__ . '/../vendor/autoload.php';
+	\LowEntryJavascriptFrameworkCore\Compiler::compile(__DIR__ . '/../', 'prod');
+}
+catch(\Throwable $e)
+{
+	echo 'ERROR: ' . $e->getMessage() . PHP_EOL;
+	exit;
+}

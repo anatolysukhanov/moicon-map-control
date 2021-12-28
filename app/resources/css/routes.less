@@ -1,0 +1,244 @@
+@import "common.less";
+
+.routes-container {
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .routes {
+    position: absolute;
+    max-width: 80vw;
+    width: 1024px;
+    height: @bottomPanelHeight;
+    bottom: -@bottomPanelHeight;
+    background: #FFFFFF;
+    transition: bottom 0.3s linear;
+
+    &.expanded {
+      bottom: 0;
+      box-shadow: 0px 8px 60px rgba(13, 15, 17, 0.15);
+    }
+
+    .routes-header {
+      display: grid;
+      grid-template-columns: auto auto 38px;
+      grid-auto-rows: 104px;
+      align-items: center;
+      padding-left: 28px;
+      padding-right: 28px;
+      border-bottom: 1px solid #F2F2F2;
+
+      .routes-header-title {
+        font-family: Gilroy Bold;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 23px;
+        line-height: 28px;
+        color: #333333;
+      }
+
+      .routes-header-middle {
+        justify-self: end;
+        display: grid;
+        grid-auto-flow: column;
+        justify-items: end;
+        align-items: center;
+
+        .routes-header-search {
+          padding-right: 18px;
+        }
+
+        .routes-header-search > input[type=text] {
+          padding-left: 22px;
+          width: 258px;
+          height: 38px;
+          border: 2px solid #E0E0E0;
+          box-sizing: border-box;
+          border-radius: 32px;
+          text-decoration: none;
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          color: #BDBDBD;
+        }
+
+        .routes-header-add-route-button {
+          height: 38px;
+          background: #FFCC33;
+          border-radius: 32px;
+          cursor: pointer;
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-column-gap: 8px;
+          justify-items: center;
+          align-items: center;
+          padding: 10px 22px 10px 22px;
+          margin-right: 24px;
+
+          .routes-header-add-route-button-icon {
+            height: 14px;
+            width: 14px;
+            background: url("../@{images}/plus.png") no-repeat;
+          }
+
+          .routes-header-add-route-button-text {
+            font-family: Gilroy Bold;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #333333;
+          }
+        }
+      }
+
+      .routes-header-close-button {
+        justify-self: end;
+        width: 38px;
+        height: 38px;
+        background: url("@{images}/btn-close.png") no-repeat;
+      }
+
+      .routes-header-close-button:hover {
+        cursor: pointer;
+        background: url("@{images}/btn-close-hover.png") no-repeat;
+      }
+    }
+
+    .routes-content-container::-webkit-scrollbar-thumb {
+      background-color: @scrollThumbColor;
+      border-radius: @scrollBorderRadius;
+    }
+
+    .routes-content-container::-webkit-scrollbar {
+      width: @scrollWidth;
+    }
+
+    .routes-content-container::-webkit-scrollbar-track {
+      background: @scrollBackgroundColor;
+    }
+
+    .routes-content-container {
+      scrollbar-width: thin;
+      scrollbar-color: @scrollThumbColor @scrollBackgroundColor;
+      overflow: auto;
+      height: 496px;
+      box-sizing: border-box;
+      padding-top: 28px;
+      padding-left: 28px;
+      padding-bottom: 0;
+
+      .routes-content {
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 399px);
+        grid-column-gap: 93px;
+        grid-row-gap: 25px;
+        grid-auto-rows: 64px;
+
+        .routes-route {
+          justify-items: start;
+          grid-template-columns: 1fr 1fr 1fr;
+
+          .routes-route-info {
+            width: 100%;
+            display: inline-grid;
+            grid-template-columns: 0fr 1fr 0fr;
+            align-items: center;
+
+            .routes-route-distance {
+              width: 64px;
+              height: 64px;
+              background: #FFCC33;
+              border-radius: 16px;
+              display: inline-grid;
+              align-items: center;
+              justify-items: center;
+              cursor: pointer;
+
+              .routes-route-distance-info {
+                display: inline-grid;
+                align-items: center;
+                justify-items: center;
+
+                .routes-route-distance-value {
+                  width: 36px;
+                  height: 17px;
+                  font-family: Gilroy SemiBold;
+                  font-style: normal;
+                  font-size: 14px;
+                  line-height: 17px;
+                  text-align: center;
+                  color: #333333;
+                }
+
+                .routes-route-distance-unit {
+                  width: 21px;
+                  height: 18px;
+                  font-family: Gilroy Light;
+                  font-style: normal;
+                  font-weight: 800;
+                  font-size: 15px;
+                  line-height: 18px;
+                  text-align: center;
+                  color: #333333;
+                }
+              }
+            }
+
+            .routes-route-details {
+              box-sizing: border-box;
+              padding-left: 21px;
+              display: inline-grid;
+              grid-template-rows: 18px;
+              grid-template-columns: 260px;
+              grid-row-gap: 5px;
+
+              .routes-route-details-from_to {
+                font-family: Gilroy Light;
+                font-weight: 800;
+                font-style: normal;
+                font-size: 15px;
+                line-height: 18px;
+                color: #333333;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                .routes-route-details-from_to > img {
+                  vertical-align: baseline;
+                }
+              }
+
+              .routes-route-details-description {
+                font-family: Gilroy Light;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: #828282;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+
+            .routes-route-action {
+              justify-self: end;
+              width: 32px;
+              height: 32px;
+              cursor: pointer;
+              background: url("@{images}/route-action.svg") no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}

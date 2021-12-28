@@ -1,0 +1,1 @@
+const ROUTES_PANEL_TOGGLE_ACTION = Redux.createAction("ROUTES_TOGGLE");

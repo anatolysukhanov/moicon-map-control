@@ -1,0 +1,8 @@
+{% set reactId = 'react_' ~ uniqueId() %}
+<div id="{{ reactId }}"></div>
+<script>
+    (function () {
+        var element = React.createElement(Login);
+        framework.react.render(element, $('#{{ reactId }}'));
+    })();
+</script>

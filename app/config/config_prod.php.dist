@@ -1,0 +1,17 @@
+<?php
+
+namespace app\config;
+
+
+/**
+ * The configuration that is different per server.
+ */
+abstract class config_prod
+{
+	public static function get($projectRootDir, $environment)
+	{
+		return [
+			'companyId' => 1,
+		];
+	}
+}

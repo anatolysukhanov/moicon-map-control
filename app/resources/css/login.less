@@ -1,0 +1,142 @@
+@import "common.less";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.login-grid-table {
+  background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0.5), rgba(255, 255, 255, 0.0)), url("@{images}/login-bg.png");
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+
+  .horisont-logo {
+    width: 157px;
+    height: 191px;
+    background: url("@{images}/horisont-logo.png") no-repeat;
+  }
+
+  .moicon-logo {
+    width: 205px;
+    height: 30px;
+    background: url("@{images}/moicon-logo.png") no-repeat;
+    justify-self: end;
+    align-self: end;
+    margin-right: 45px;
+    margin-bottom: 31px;
+  }
+
+  .hiks-logo {
+    width: 33px;
+    height: 43px;
+    background: url("@{images}/hiks-logo.png") no-repeat;
+  }
+
+  .login-form-container {
+    width: 338px;
+    padding-bottom: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 40px 60px rgba(13, 15, 17, 0.15);
+    display: grid;
+    align-items: start;
+    justify-items: center;
+
+    .login-form {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: center;
+      grid-row-gap: 20px;
+
+      .login-username {
+        margin-top: 40px;
+      }
+
+      .login-password {
+      }
+
+      .login-input-text {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-decoration: none;
+      }
+
+      .login-error-text {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: right;
+        color: #FF4802;
+        margin-top: -9px;
+        justify-self: end;
+      }
+
+      input {
+        padding-left: 38px;
+        width: 258px;
+        height: 38px;
+        border: 2px solid #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 32px;
+      }
+
+      input:focus {
+        border: 2px solid #4F4F4F;
+        box-sizing: border-box;
+        border-radius: 32px;
+      }
+
+      input.error:focus {
+        border: 2px solid #FF4802;
+        box-sizing: border-box;
+        border-radius: 32px;
+      }
+
+      input[type="text"] {
+        background: url("@{images}/username.svg") no-repeat 12px 8px;
+      }
+
+      input.error[type="text"] {
+        background: url("@{images}/username.svg") left 12px top 8px no-repeat, url("@{images}/exclamation.svg") right 12px top 8px no-repeat;
+      }
+
+      input[type="password"] {
+        background: url("@{images}/password.svg") left 12px top 8px no-repeat;
+      }
+
+      input.error[type="password"] {
+        background: url("@{images}/password.svg") left 12px top 8px no-repeat, url("@{images}/exclamation.svg") right 12px top 8px no-repeat;
+      }
+
+      ::placeholder {
+        color: #BDBDBD;
+      }
+
+      :-ms-input-placeholder {
+        color: #BDBDBD;
+      }
+
+      .login-button {
+        width: 90px;
+        height: 42px;
+        background: url("@{images}/login-btn.png") no-repeat;
+        cursor: pointer;
+      }
+
+      .login-button:hover {
+        width: 90px;
+        height: 42px;
+        background: url("@{images}/login-btn-hover.png") no-repeat;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import "../common.less";
+
+.route-recording-popup-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transition: bottom 0.3s linear;
+
+  &.route-recording-popup-container-expanded {
+    bottom: 0;
+  }
+
+  .route-recording-popup-panel {
+    width: 274px;
+    height: 189px;
+    background: #FFFFFF;
+    box-shadow: 0px -8px 60px rgba(13, 15, 17, 0.15);
+    display: inline-grid;
+    grid-row-gap: 44px;
+    justify-items: center;
+    padding: 41px 19px 30px 19px;
+
+    .route-recording-popup-text {
+      font-family: Gilroy Light;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 17px;
+      text-align: center;
+      color: #333333;
+    }
+
+    .route-recording-popup-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 15px;
+
+      .route-recording-popup-btn-text {
+        font-family: Gilroy SemiBold;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #333333;
+      }
+
+      .route-recording-popup-yes-btn {
+        position: relative;
+        width: 108px;
+        height: 38px;
+        background: #FFCC33;
+        border-radius: 32px;
+        cursor: pointer;
+
+        .route-recording-popup-yes-btn-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: inline-grid;
+          grid-template-columns: auto;
+          justify-items: center;
+          align-items: center;
+        }
+      }
+
+      .route-recording-popup-no-btn {
+        position: relative;
+        width: 98px;
+        height: 38px;
+        background: #E0E0E0;
+        border-radius: 32px;
+        cursor: pointer;
+
+        .route-recording-popup-no-btn-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: inline-grid;
+          grid-template-columns: auto;
+          justify-items: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

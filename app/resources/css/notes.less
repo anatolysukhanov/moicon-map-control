@@ -1,0 +1,192 @@
+@import "common.less";
+
+.disabled {
+}
+
+.infowindow-note {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 60px rgba(13, 15, 17, 0.15);
+  display: inline-grid;
+  align-items: center;
+  justify-content: start;
+  grid-row-gap: 5px;
+  padding: 10px;
+
+  .infowindow-note-name {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333333;
+    align-self: end;
+    width: 230px;
+  }
+
+  .infowindow-note-value {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #828282;
+    align-self: start;
+  }
+}
+
+.note-create-background {
+  position: absolute;
+  background: #333333;
+  opacity: 0.5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.note-create-container {
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+
+  .note-create-panel {
+    position: relative;
+    height: 500px;
+    bottom: -500px;
+    background: #FFFFFF;
+    display: grid;
+    justify-items: start;
+    grid-row-gap: 10px;
+    padding: 10px;
+    transition: bottom 0.3s linear;
+    pointer-events: auto;
+
+    &.note-create-panel-expanded {
+      bottom: 0;
+      box-shadow: 0px -8px 60px rgba(13, 15, 17, 0.15);
+    }
+
+    .note-create-header {
+      justify-self: center;
+      font-family: Gilroy Bold;
+      font-size: 21px;
+      line-height: 26px;
+      color: #333333;
+    }
+
+    .note-create-name {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 13px;
+      line-height: 16px;
+      color: #333333;
+      text-align: center;
+    }
+
+    .note-create-value {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      color: #828282;
+    }
+
+    .note-create-value > textarea {
+      padding: 6px;
+      resize: none;
+      width: 400px;
+      height: 100px;
+      border: 2px solid #E0E0E0;
+      box-sizing: border-box;
+      border-radius: 10px;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      color: #828282;
+    }
+
+    .note-create-value-input {
+      .note-create-value();
+      padding: 6px;
+      border: 2px solid #E0E0E0;
+      box-sizing: border-box;
+      border-radius: 10px;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      color: #828282;
+    }
+
+    .note-create-value > input {
+      .note-create-value-input();
+    }
+
+    .note-create-value-address > input {
+      .note-create-value-input();
+      width: 300px;
+    }
+
+    .note-create-buttons {
+      justify-self: center;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 15px;
+
+      .note-create-button-text {
+        font-family: Gilroy SemiBold;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #333333;
+      }
+
+      .note-create-button-text-disabled {
+        .note-create-button-text();
+        color: #BDBDBD;
+      }
+
+      .note-create-button-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .note-create-save-button {
+        position: relative;
+        width: 98px;
+        height: 38px;
+        background: #FFCC33;
+        border-radius: 32px;
+        cursor: pointer;
+      }
+
+      .note-create-save-button-disabled {
+        .note-create-save-button();
+        background: #F2F2F2;
+        cursor: default;
+      }
+
+      .note-create-cancel-button {
+        position: relative;
+        width: 98px;
+        height: 38px;
+        background: #E0E0E0;
+        border-radius: 32px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+

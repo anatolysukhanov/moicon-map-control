@@ -1,0 +1,189 @@
+@import "../common.less";
+
+@panelHeight: 450px;
+@panelWidth: 1024px;
+
+.route-history-container {
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .route-history-panel {
+    position: absolute;
+    max-width: 80vw;
+    width: @panelWidth;
+    height: @panelHeight;
+    bottom: -@panelHeight;
+    background: #FFFFFF;
+    display: grid;
+    grid-template-rows: 100px auto;
+    transition: bottom 0.3s linear;
+
+    &.expanded {
+      bottom: 0;
+      box-shadow: 0px -8px 60px rgba(13, 15, 17, 0.15);
+    }
+
+    .route-history-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 30px;
+      border-bottom: 1px solid #F2F2F2;
+
+      .route-history-header-title {
+        font-family: Gilroy ExtraBold;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 23px;
+        line-height: 28px;
+        color: #333333;
+      }
+
+      .route-history-header-close-button {
+        justify-self: end;
+        width: 38px;
+        height: 38px;
+        background: url("../@{images}/btn-close.png") no-repeat;
+      }
+
+      .route-history-header-close-button:hover {
+        cursor: pointer;
+        background: url("../@{images}/btn-close-hover.png") no-repeat;
+      }
+    }
+
+    .route-history-content-container::-webkit-scrollbar-thumb {
+      background-color: @scrollThumbColor;
+      border-radius: @scrollBorderRadius;
+    }
+
+    .route-history-content-container::-webkit-scrollbar {
+      width: @scrollWidth;
+    }
+
+    .route-history-content-container::-webkit-scrollbar-track {
+      background: @scrollBackgroundColor;
+    }
+
+    .route-history-content-container {
+      scrollbar-width: thin;
+      scrollbar-color: @scrollThumbColor @scrollBackgroundColor;
+      overflow: auto;
+      height: 350px;
+      box-sizing: border-box;
+      padding: 28px 28px 0 28px;
+
+      .route-history-content {
+        display: grid;
+        grid-template-columns: minmax(238px, 338px) auto;
+        grid-column-gap: 12px;
+        margin-bottom: 28px;
+
+        .route-history-content-route {
+          display: grid;
+          grid-template-columns: 64px auto;
+          grid-template-rows: 64px;
+
+          .route-history-content-route-name {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            background: #F2F2F2;
+            border-radius: 16px;
+
+            .route-history-content-route-name-value {
+              font-family: Gilroy Bold;
+              font-style: normal;
+              font-weight: 800;
+              font-size: 14px;
+              line-height: 17px;
+              text-align: center;
+              color: #333333;
+            }
+          }
+
+          .route-history-content-route-details {
+            box-sizing: border-box;
+            padding-left: 21px;
+            display: grid;
+            grid-template-rows: 18px;
+            grid-row-gap: 5px;
+            align-content: center;
+
+            .route-history-content-route-details-from-to {
+              font-family: Gilroy;
+              font-weight: 800;
+              font-style: normal;
+              font-size: 15px;
+              line-height: 18px;
+              color: #333333;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+
+              .route-history-content-route-details-from-to > img {
+                vertical-align: baseline;
+              }
+            }
+
+            .route-history-content-route-details-distance {
+              font-family: Gilroy;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 18px;
+              color: #828282;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+
+        .route-history-content-history {
+          display: grid;
+          grid-auto-flow: row;
+          align-items: start;
+
+          > :nth-child(even) {
+            background: #F4F4F4;
+          }
+
+          .route-history-content-history-row {
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: minmax(76px, 1fr) minmax(70px, 1fr) minmax(80px, 1fr) 1fr;
+            align-items: center;
+            justify-content: start;
+            padding: 8px 18px;
+
+            .route-history-content-history-header {
+              font-family: Gilroy Medium;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 10px;
+              line-height: 12px;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              color: rgba(51, 51, 51, 0.7);
+            }
+
+            > div {
+              font-family: Gilroy Medium;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 13.1503px;
+              line-height: 150%;
+              color: #333333;
+            }
+          }
+        }
+      }
+    }
+  }
+}

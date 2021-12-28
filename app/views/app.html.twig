@@ -1,0 +1,5 @@
+{% set reactId = 'react_' ~ uniqueId() %}
+<div id="{{ reactId }}"></div>
+<script>
+    initializeAppView($('#{{ reactId }}'));
+</script>

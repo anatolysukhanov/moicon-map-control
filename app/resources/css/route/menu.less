@@ -1,0 +1,91 @@
+@import "../common.less";
+
+.route-menu-container {
+  pointer-events: none;
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  .route-menu-background {
+    pointer-events: auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.3s linear;
+
+    &.expanded {
+      visibility: visible;
+      opacity: 0.5;
+    }
+  }
+
+  .route-menu {
+    pointer-events: auto;
+    position: absolute;
+    width: @routeWidth;
+    height: @routeHeight;
+    bottom: -@routeHeight;
+    background: #FFFFFF;
+    transition: bottom 0.3s linear;
+
+    &.expanded {
+      bottom: 0;
+      box-shadow: 0px -8px 60px rgba(13, 15, 17, 0.15);
+    }
+
+    .route-menu-items {
+      margin-top: 22px;
+      margin-left: 20px;
+      display: inline-grid;
+      grid-template-rows: 35px 35px 35px;
+      grid-template-columns: 30px 330px;
+      grid-row-gap: 8px;
+
+      .route-menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        cursor: pointer;
+        padding-left: 11px;
+
+        .route-menu-edit-button {
+          width: 16px;
+          height: 16px;
+          cursor: pointer;
+          background: url("../@{images}/route-edit.svg") no-repeat;
+        }
+
+        .route-menu-delete-button {
+          width: 8px;
+          height: 4px;
+          cursor: pointer;
+          background: url("../@{images}/route-delete.svg") no-repeat;
+        }
+
+        .route-menu-cancel-button {
+          width: 19px;
+          height: 19px;
+          cursor: pointer;
+          background: url("../@{images}/route-cancel.svg") no-repeat;
+        }
+      }
+
+      .route-menu-col-2 {
+        padding-left: 10px;
+        justify-content: start;
+        font-family: Gilroy SemiBold;
+        font-size: 15px;
+        line-height: 18px;
+        color: #333333;
+      }
+    }
+  }
+}

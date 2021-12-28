@@ -1,0 +1,244 @@
+@import "common.less";
+
+.reports-container {
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .reports-panel {
+    position: absolute;
+    max-width: 80vw;
+    width: 1024px;
+    height: @bottomPanelHeight;
+    bottom: -@bottomPanelHeight;
+    background: #FFFFFF;
+    transition: bottom 0.3s linear;
+
+    &.reports-panel-expanded {
+      bottom: 0;
+      box-shadow: 0px 8px 60px rgba(13, 15, 17, 0.15);
+    }
+
+    .reports-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      .reports-header-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .reports-title {
+        justify-content: start;
+        margin-left: 28px;
+        height: 28px;
+        font-family: Gilroy Bold;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 23px;
+        line-height: 28px;
+        color: #333333;
+      }
+
+      .reports-search {
+        justify-content: flex-end;
+        margin-right: 28px;
+      }
+
+      .reports-search-input {
+        margin-right: 16px;
+        width: 258px;
+        height: 38px;
+      }
+
+      .reports-search-input > input[type=text] {
+        padding-left: 22px;
+        width: 258px;
+        height: 38px;
+        border: 2px solid #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 32px;
+        text-decoration: none;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: #BDBDBD;
+      }
+
+      .reports-close-button {
+        width: 38px;
+        height: 38px;
+        background: url("@{images}/btn-close.png") no-repeat;
+      }
+
+      .reports-close-button:hover {
+        cursor: pointer;
+        background: url("@{images}/btn-close-hover.png") no-repeat;
+      }
+    }
+
+    .reports-content-container {
+      border-top: 1px solid #F2F2F2;
+      box-sizing: border-box;
+      padding: 28px 28px 0 28px;
+      overflow: auto;
+      max-height: 496px;
+
+      scrollbar-width: thin;
+      scrollbar-color: #333333 #FFFFFF;
+
+      .reports-content {
+        margin-bottom: 33px;
+        display: grid;
+        grid-gap: 46px;
+        grid-template-columns: 1fr;
+
+        .report-day {
+          display: grid;
+          align-items: center;
+          grid-row-gap: 5px;
+
+          .report-date {
+            grid-column: 1 e("/") span 2;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #333333;
+            opacity: 0.5;
+          }
+
+          .report-qty {
+            grid-column: 1;
+            grid-row: 2;
+            font-family: Gilroy SemiBold;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            color: #333333;
+          }
+
+          .report-info {
+            grid-column: 2;
+            grid-row: 2;
+            justify-self: end;
+            text-align: right;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #828282;
+
+            /* show on the map button */
+
+            &.report-show-on-map {
+
+              background: #F2F2F2;
+              border-radius: 32px;
+              cursor: pointer;
+
+              .report-show-on-map-text {
+                padding: 10px 30px 10px 30px;
+                font-family: Gilroy Bold;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 15px;
+                line-height: 18px;
+                text-align: center;
+                color: #333333;
+              }
+            }
+          }
+
+          .reports {
+            grid-row: 3;
+            grid-column: 1 e("/") span 2;
+            margin-top: 28px;
+            display: inline-grid;
+            grid-template-columns: repeat(2, @thumbnailWidth);
+            grid-column-gap: 38px;
+            grid-row-gap: 25px;
+            grid-auto-rows: @thumbnailHeight + 60px;
+
+            .report {
+              display: inline-grid;
+              grid-auto-flow: row;
+              align-items: start;
+              justify-items: start;
+
+              background: #FFFFFF;
+              box-shadow: 0px 8px 60px rgba(13, 15, 17, 0.15);
+
+              .report-image > img {
+                width: 100%;
+              }
+
+              .report-details {
+                padding-left: 15px;
+                width: 100%;
+                display: inline-grid;
+                grid-template-columns: 38px auto 140px;
+                grid-column-gap: 12px;
+
+                .report-details-type-image {
+                  align-self: center;
+                }
+
+                .report-details-info {
+                  justify-self: start;
+                  display: inline-grid;
+                  grid-auto-flow: row;
+                  grid-row-gap: 5px;
+
+                  .report-type {
+                    align-self: end;
+                    font-family: Gilroy Bold;
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #333333;
+                  }
+
+                  .report-address {
+                    align-self: start;
+                    font-family: Gilroy Light;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    color: #828282;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .reports-content-container::-webkit-scrollbar-thumb {
+      background-color: @scrollThumbColor;
+      border-radius: @scrollBorderRadius;
+    }
+
+    .reports-content-container::-webkit-scrollbar {
+      width: @scrollWidth;
+    }
+
+    .reports-content-container::-webkit-scrollbar-track {
+      background: @scrollBackgroundColor;
+    }
+  }
+}

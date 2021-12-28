@@ -1,0 +1,34 @@
+{
+  "name": "lowentry/javascript-framework",
+  "type": "project",
+  "license": "Apache-2.0",
+  "description": "A framework to create complex single-page and multi-page javascript websites with ease.",
+  "homepage": "https://lowentry.com/",
+  "require": {
+    "lowentry/javascript-framework-core": "^1.0.0",
+    "npm-asset/react-google-maps--api": "^1.7.13"
+  },
+  "config": {
+    "platform": {
+      "php": "7.0.0"
+    }
+  },
+  "extra": {
+    "mouf": {
+      "nodejs": {
+        "forceLocal": true
+      }
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "app"
+    }
+  }
+}
